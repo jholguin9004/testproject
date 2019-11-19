@@ -1,0 +1,7 @@
+{
+    "patches": {
+      "mpdf/mpdf": {
+        "Patch title": "patches/parcheMpdf.patch"
+      }
+    }
+} 

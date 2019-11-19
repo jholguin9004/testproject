@@ -1,0 +1,89 @@
+{
+  "name": "uniandes/test-project",
+  "type": "uniandes-drupal-project",
+  "description": "Uniandes - Projecto de prueba",
+  "keywords": [
+    "cms", "uniandes", "pryecto", "prueba"
+  ],
+  "homepage": "http://edco.uniandes.edu.co",
+  "authors": [
+    {
+      "name": "Jhonathan Holguin",
+      "email": "jholguin9004@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "composer/installers": "~1.0",
+    "drupal-composer/preserve-paths": "*",
+    "oomphinc/composer-installers-extender": "^1.1",
+    "cweagans/composer-patches": "^1.6.4",
+
+    "drupal/webform_telephone": "^1.0.0",
+    "drupal/form_placeholder": "^1.7",
+    "drupal/webform_optionsmarkup": "^2.1.0",
+    "mpdf/mpdf": "6.0.0",
+
+    "uniandes/uniandes_installer": "7.1.*",
+    "uniandes/webform_extend": "7.1.*",
+    "uniandes/uniandes_testmodule": "7.1.3"
+  },
+  "replace": {
+      "drupal/drupal": "*"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url":  "git@github.com:UniandesDSIT/Componente-Formularios-Drupal.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:UniandesDSIT/Componente-Profesores-Drupal.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:UniandesDSIT/Componente-Directorio-Drupal.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:UniandesDSIT/Componente-Programas-Drupal.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:UniandesDSIT/Componente-Pensum-Drupal.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:UniandesDSIT/Instalador-contenidos-drupal.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:UniandesDSIT/drupal-module-test.git"
+    },
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/7"
+    }
+  ],
+  "config": {
+    "preferred-install": "dist",
+    "vendor-dir": "vendor"
+  },
+  "extra": {
+    "enable-patching": true,
+    "patches-file": "composer.patches.json",
+    "installer-types": ["library"],
+    "installer-paths": {
+      "libraries/{$name}": [
+        "type:library"
+      ],
+      "modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "modules/custom/{$name}": [
+        "type:drupal-custom-module"
+      ]
+    },
+  }
+}
