@@ -7,10 +7,12 @@ files/
 sites/*/files
 sites/*/private
 sites/*
+!sites/all
+#sites/all/*
+#!sites/all/modules
 sites/all/modules/custom
 sites/all/modules/contrib
 sites/all/libraries
-!sites/all/
 vendor
 composer.lock
 
