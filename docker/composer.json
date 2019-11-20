@@ -16,36 +16,48 @@
     "repositories": [
         {
             "type": "vcs",
-            "url":  "git@github.com:UniandesDSIT/Componente-Formularios-Drupal.git"
+            "url":  "git@github.com:jholguin9004/testproject.git"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/UniandesDSIT/Componente-Profesores-Drupal"
-        },
-        {
+            "url":  "git@github.com:UniandesDSIT/Componente-Formularios-Drupal.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:UniandesDSIT/Componente-Profesores-Drupal.git"
+          },
+          {
             "type": "vcs",
             "url": "git@github.com:UniandesDSIT/Componente-Directorio-Drupal.git"
-        },
-        {
+          },
+          {
             "type": "vcs",
             "url": "git@github.com:UniandesDSIT/Componente-Programas-Drupal.git"
-        },
-        {
+          },
+          {
             "type": "vcs",
             "url": "git@github.com:UniandesDSIT/Componente-Pensum-Drupal.git"
-        },
-        {
+          },
+          {
             "type": "vcs",
             "url": "git@github.com:UniandesDSIT/Instalador-contenidos-drupal.git"
-        }
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:UniandesDSIT/drupal-module-test.git"
+          },
+          {
+            "type": "composer",
+            "url": "https://packages.drupal.org/7"
+          }
     ],
     "config": {
-        "vendor-dir": "sites/all/modules/custom"
+        "vendor-dir": "vendor"
     },
     "extra": {
         "installer-paths": {
-            "sites/all/modules/contrib/{$name}/": ["type:drupal-module"],
-            "sites/all/modules/custom/{$name}": ["type:drupal-custom-module"]
+            "modules/contrib/{$name}/": ["type:drupal-module"],
+            "modules/custom/{$name}": ["type:drupal-custom-module"]
         }
     }
 }
