@@ -1,7 +1,7 @@
 {
     "patches": {
       "mpdf/mpdf": {
-        "Patch title": "patches/parcheMpdf.patch"
+        "Patch title": "docker/patches/parcheMpdf.patch"
       }
     }
 } 

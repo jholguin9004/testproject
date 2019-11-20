@@ -1,0 +1,51 @@
+{
+    "name": "uniandes/docker-test-project",
+    "type": "project",
+    "description": "Docker for Projecto de prueba", 
+    "keywords": ["cms", "uniandes"],
+    "homepage": "https://uniandes.edu.co",
+    "authors": [
+        {
+            "name": "Jhonatan Holguín",
+            "email": "jh.holguin546@uniandes.edu.co"
+        }
+    ],
+    "require": {
+        "uniandes/test-project": "1.0.*"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:UniandesDSIT/Componente-Formularios-Drupal.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/UniandesDSIT/Componente-Profesores-Drupal"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:UniandesDSIT/Componente-Directorio-Drupal.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:UniandesDSIT/Componente-Programas-Drupal.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:UniandesDSIT/Componente-Pensum-Drupal.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:UniandesDSIT/Instalador-contenidos-drupal.git"
+        }
+    ],
+    "config": {
+        "vendor-dir": "sites/all/modules/custom"
+    },
+    "extra": {
+        "installer-paths": {
+            "sites/all/modules/contrib/{$name}/": ["type:drupal-module"],
+            "sites/all/modules/custom/{$name}": ["type:drupal-custom-module"]
+        }
+    }
+}
