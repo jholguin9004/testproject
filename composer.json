@@ -84,6 +84,6 @@
       "modules/custom/{$name}": [
         "type:drupal-custom-module"
       ]
-    },
+    }
   }
 }

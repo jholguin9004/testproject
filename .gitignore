@@ -1,2 +1,5 @@
 modules/custom
 modules/contrib
+libraries
+vendor
+composer.lock

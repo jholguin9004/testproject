@@ -1,0 +1,19 @@
+diff --git a/mpdf.php b/mpdf.php
+index 7e15831..4e5af62 100644
+--- a/mpdf.php
++++ b/mpdf.php
+@@ -8,6 +8,7 @@
+ // Date:     2014-11-24                                                         *
+ // Author:   Ian Back <ianb@bpm1.com>                                           *
+ // License:  GPL                                                                *
++// Modificado mediante un parche
+ //                                                                              *
+ // Changes:  See changelog.txt                                                  *
+ // ******************************************************************************
+@@ -32749,4 +32750,4 @@ function SetJS($script) {
+ 
+ 
+ 
+-?>
+\ No newline at end of file
++?>
