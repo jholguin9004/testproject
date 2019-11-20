@@ -10,7 +10,7 @@ sites/*
 sites/all/modules/custom
 sites/all/modules/contrib
 sites/all/libraries
-!sites/all
+!sites/all/
 vendor
 composer.lock
 
